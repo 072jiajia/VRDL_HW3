@@ -50,7 +50,7 @@ if __name__ == "__main__":
     predictor2 = DefaultPredictor(cfg)
 
     # Do prediction
-    coco_test = COCO("test.json")
+    coco_test = COCO("test_images/test.json")
     prediction = []
     for imgid in coco_test.imgs:
         filename = coco_test.loadImgs(ids=imgid)[0]['file_name']
