@@ -2,7 +2,9 @@
 Code for mAP 0.68340 solution in VRDL Homework 3
 
 ## Abstract
-In this work, I use Cascade Mask R-CNN as my model<br>
+In this work, I use [Cascade Mask R-CNN](https://github.com/facebookresearch/detectron2/blob/master/configs/Misc/cascade_mask_rcnn_X_152_32x8d_FPN_IN5k_gn_dconv.yaml) as my model<br>
+In testing phase, I resize the shorter edge of the image to 2 different length (400 and 800)<br>
+And merge the two predictions by nms with threshold = 0.7
 
 ## Reference
 Detectron2 [GitHub](https://github.com/facebookresearch/detectron2)<br>
@@ -39,17 +41,19 @@ pip3 install -r requirements.txt
 You need to download the data [here](https://drive.google.com/drive/u/1/folders/1Ob5oT9Lcmz7g5mVOcYH3QugA7tV3WsSl) by yourself.<br>
 Unzip it and put them into the same directory below
 ```
-VRDL_HW2
+VRDL_HW3
   + test_images
   | + 2007_000629.jpg
   | + 2007_001175.jpg
   | + ...
   | + 2011_003146.jpg
+  | + pascal_train.json
   + train_images
   | + 2007_000033.jpg
   | + 2007_000042.jpg
   | + ...
   | + 2011_003271.jpg
+  | + test.json
   + config.yaml
   + inference.py
   + train.py
@@ -59,7 +63,7 @@ VRDL_HW2
 You can download pre-trained model that used for my submission from this [link]({link})<br>
 And put it into the following directory:
 ```
-VRDL_HW2
+VRDL_HW3
   + test_images
   + train_images
   + bestmodel_HW3.pth
