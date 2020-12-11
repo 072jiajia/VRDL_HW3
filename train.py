@@ -25,6 +25,7 @@ train_path = "train_images/"
 json_file = "train_images/pascal_train.json"
 register_coco_instances("VOC_dataset", {}, json_file, train_path)
 
+
 class Trainer(DefaultTrainer):
     ''' custom Trainer '''
     @classmethod
