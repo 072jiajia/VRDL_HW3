@@ -100,7 +100,7 @@ GPUs | MAX_ITER | Training Time
 
 After finishing training your model, run the following command to make your prediction
 ```
-python3 predict.py {your model's name}
+python3 inference.py {your model's name}
 ```
 It will generate a file prediction.json which is the prediction of the testing dataset<br>
 Use this json file to make your submission!
