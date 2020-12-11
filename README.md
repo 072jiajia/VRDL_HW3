@@ -7,10 +7,10 @@ In testing phase, I resize the shorter edge of the image to 2 different lengths 
 And merge the two predictions by nms with threshold = 0.7 which is equal to RPN's nms threshold
 
 ## Reference
-Detectron2 [GitHub](https://github.com/facebookresearch/detectron2)<br>
-Cascade R-CNN [Paper](https://arxiv.org/pdf/1712.00726v1.pdf)<br>
-Group Normalization[Paper](https://arxiv.org/pdf/1803.08494.pdf)<br>
-Deformable Convolutional Networks[Paper](https://arxiv.org/pdf/1703.06211.pdf)
+[GitHub](https://github.com/facebookresearch/detectron2) Detectron2<br>
+[Paper](https://arxiv.org/pdf/1712.00726v1.pdf) Cascade R-CNN<br>
+[Paper](https://arxiv.org/pdf/1803.08494.pdf) Group Normalization<br>
+[Paper](https://arxiv.org/pdf/1703.06211.pdf) Deformable Convolutional Networks
 
 ## Hardware
 The following specs were used to create the solutions.
