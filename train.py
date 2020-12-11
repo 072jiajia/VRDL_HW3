@@ -14,8 +14,8 @@ from detectron2 import model_zoo
 
 # Set Environment
 warnings.filterwarnings("ignore")
-os.environ["CUDA_VISIBLE_DEVICES"] = "3"
-num_gpus = 1
+os.environ["CUDA_VISIBLE_DEVICES"] = "0, 1, 2"
+num_gpus = 3
 
 
 class Trainer(DefaultTrainer):
