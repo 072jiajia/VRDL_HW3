@@ -36,11 +36,11 @@ All requirements should be detailed in requirements.txt. Using virtual environme
 ```
 virtualenv .
 source bin/activate
-pip3 install -r requirements.txt
+python -m pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cu110/torch1.7/index.html
 ```
 
 If your CUDA version is not 11.0<br>
-You might need to change all "cu110" to your cuda version in requirements.txt<br>
+You might need to change all "cu110" to your cuda version<br>
 Or you can [install detectron2](https://github.com/facebookresearch/detectron2/blob/master/INSTALL.md) by yourself
 
 ## Dataset Preparation
