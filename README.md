@@ -94,7 +94,7 @@ It will generate a file named prediction.json and it is my prediction whose mAP 
 ## Train and Make Prediction
 You can simply run the following command to train your own models and make submission.
 ```
-$ python train.py
+$ python3 train.py
 ```
 
 The expected training time is:
