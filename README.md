@@ -32,7 +32,9 @@ To produce your own submission, do the following steps:
 3. [Train and Make Submission](#train-and-make-prediction)
 
 ## Installation
-All requirements should be detailed in requirements.txt. Using virtual environment is recommended.
+Using virtual environment is recommended.<br>
+My CUDA version is 11.0<br>
+Set the environment by the following commands if your CUDA version is the same as mine.
 ```
 virtualenv .
 source bin/activate
@@ -43,8 +45,8 @@ pip3 install shapely
 ```
 
 If your CUDA version is not 11.0<br>
-You might need to change all "cu110" to your cuda version<br>
-Or you can [install detectron2](https://github.com/facebookresearch/detectron2/blob/master/INSTALL.md) and [torch](https://pytorch.org) by yourself
+You might need to follow the tutorial of [detectron2's installation](https://github.com/facebookresearch/detectron2/blob/master/INSTALL.md)<br>
+And install the corresponding version of [torch](https://pytorch.org) by yourself
 
 ## Dataset Preparation
 You need to download the data [here](https://drive.google.com/drive/folders/1fGg03EdBAxjFumGHHNhMrz2sMLLH04FK) by yourself.<br>
