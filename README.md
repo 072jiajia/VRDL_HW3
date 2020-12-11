@@ -53,13 +53,13 @@ VRDL_HW3
   | + 2007_001175.jpg
   | + ...
   | + 2011_003146.jpg
-  | + pascal_train.json
+  | + test.json
   + train_images
   | + 2007_000033.jpg
   | + 2007_000042.jpg
   | + ...
   | + 2011_003271.jpg
-  | + test.json
+  | + pascal_train.json
   + config.yaml
   + inference.py
   + train.py
