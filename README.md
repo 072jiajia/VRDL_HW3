@@ -8,8 +8,8 @@ And merge the two predictions by nms with threshold = 0.7 which is equal to RPN'
 
 ## Reference
 Detectron2 [GitHub](https://github.com/facebookresearch/detectron2)<br>
-Cascade R-CNN [Paper](https://arxiv.org/pdf/1712.00726v1.pdf)
-Group Normalization[Paper](https://arxiv.org/pdf/1803.08494.pdf)
+Cascade R-CNN [Paper](https://arxiv.org/pdf/1712.00726v1.pdf)<br>
+Group Normalization[Paper](https://arxiv.org/pdf/1803.08494.pdf)<br>
 Deformable Convolutional Networks[Paper](https://arxiv.org/pdf/1703.06211.pdf)
 
 ## Hardware
