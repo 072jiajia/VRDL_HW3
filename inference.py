@@ -13,7 +13,7 @@ from pycocotools.coco import COCO
 from pycocotools import mask as maskutil
 
 warnings.filterwarnings("ignore")
-os.environ["CUDA_VISIBLE_DEVICES"] = "6"
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 
 def binary_mask_to_rle(mask):
