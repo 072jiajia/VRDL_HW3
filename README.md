@@ -21,14 +21,14 @@ The following specs were used to create the solutions.
 ## Reproducing Submission
 To reproduct my submission, do the following steps:
 1. [Installation](#installation)
-2. [Prepare Data](#dataset-preparation)
+2. [Prepare Data](#data-preparation)
 3. [Download Pretrained models](#pretrained-models)
 4. [Inference](#inference)
 
 ## Producing Your Own Submission
 To produce your own submission, do the following steps:
 1. [Installation](#installation)
-2. [Prepare Data](#dataset-preparation)
+2. [Prepare Data](#data-preparation)
 3. [Train and Make Submission](#train-and-make-prediction)
 
 ## Installation
@@ -48,7 +48,7 @@ If your CUDA version is not 11.0<br>
 You might need to follow the tutorial of [detectron2's installation](https://github.com/facebookresearch/detectron2/blob/master/INSTALL.md)<br>
 And install the corresponding version of [torch](https://pytorch.org) by yourself
 
-## Dataset Preparation
+## Data Preparation
 You need to download the data [here](https://drive.google.com/drive/folders/1fGg03EdBAxjFumGHHNhMrz2sMLLH04FK) by yourself.<br>
 Unzip it and put them into the same directory below
 ```
