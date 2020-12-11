@@ -36,12 +36,15 @@ All requirements should be detailed in requirements.txt. Using virtual environme
 ```
 virtualenv .
 source bin/activate
-python -m pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cu110/torch1.7/index.html
+python3 -m pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cu110/torch1.7/index.html
+pip3 install torch===1.7.1+cu110 torchvision===0.8.2+cu110 torchaudio===0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
+pip3 install opencv-python
+pip3 install shapely
 ```
 
 If your CUDA version is not 11.0<br>
 You might need to change all "cu110" to your cuda version<br>
-Or you can [install detectron2](https://github.com/facebookresearch/detectron2/blob/master/INSTALL.md) by yourself
+Or you can [install detectron2](https://github.com/facebookresearch/detectron2/blob/master/INSTALL.md) and [torch](https://pytorch.org) by yourself
 
 ## Dataset Preparation
 You need to download the data [here](https://drive.google.com/drive/folders/1fGg03EdBAxjFumGHHNhMrz2sMLLH04FK) by yourself.<br>
