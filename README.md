@@ -1,14 +1,16 @@
 # VRDL Homework 3
-Code for mAP 0.68340 solution in VRDL Homework 3
+Code for mAP 0.68340 solution of VRDL Homework 3
 
 ## Abstract
 In this work, I use [Cascade Mask R-CNN](https://github.com/facebookresearch/detectron2/blob/master/configs/Misc/cascade_mask_rcnn_X_152_32x8d_FPN_IN5k_gn_dconv.yaml) as my model<br>
-In testing phase, I resize the shorter edge of the image to 2 different length (400 and 800)<br>
-And merge the two predictions by nms with threshold = 0.7
+In testing phase, I resize the shorter edge of the image to 2 different lengths 400 and 800<br>
+And merge the two predictions by nms with threshold = 0.7 which is equal to RPN's nms threshold
 
 ## Reference
 Detectron2 [GitHub](https://github.com/facebookresearch/detectron2)<br>
 Cascade R-CNN [Paper](https://arxiv.org/pdf/1712.00726v1.pdf)
+Group Normalization[Paper](https://arxiv.org/pdf/1803.08494.pdf)
+Deformable Convolutional Networks[Paper](https://arxiv.org/pdf/1703.06211.pdf)
 
 ## Hardware
 The following specs were used to create the solutions.
@@ -37,8 +39,12 @@ source bin/activate
 pip3 install -r requirements.txt
 ```
 
+If your CUDA version is not 11.0<br>
+You might need to change all "cu110" to your cuda version in requirements.txt<br>
+Or you can [install detectron2](https://github.com/facebookresearch/detectron2/blob/master/INSTALL.md) by yourself
+
 ## Dataset Preparation
-You need to download the data [here](https://drive.google.com/drive/u/1/folders/1Ob5oT9Lcmz7g5mVOcYH3QugA7tV3WsSl) by yourself.<br>
+You need to download the data [here](https://drive.google.com/drive/folders/1fGg03EdBAxjFumGHHNhMrz2sMLLH04FK) by yourself.<br>
 Unzip it and put them into the same directory below
 ```
 VRDL_HW3
@@ -60,7 +66,7 @@ VRDL_HW3
 ```
 
 ## Pretrained models
-You can download pre-trained model that used for my submission from this [link]({link})<br>
+You can download pre-trained model that used for my submission from this [link](https://drive.google.com/file/d/1ZgZ9yRhuzfZK2pV0Zw9L2-opRMlsgTM2/view?usp=sharing)<br>
 And put it into the following directory:
 ```
 VRDL_HW3
