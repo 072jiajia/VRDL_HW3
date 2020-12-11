@@ -16,7 +16,14 @@ from detectron2 import model_zoo
 warnings.filterwarnings("ignore")
 os.environ["CUDA_VISIBLE_DEVICES"] = "0, 1, 2"
 num_gpus = 3
+batch_size = 2 * num_gpus
 
+# Initialize args and data
+args = default_argument_parser().parse_args()
+setup_logger()
+train_path = "train_images/"
+json_file = "train_images/pascal_train.json"
+register_coco_instances("VOC_dataset", {}, json_file, train_path)
 
 class Trainer(DefaultTrainer):
     ''' custom Trainer '''
@@ -76,6 +83,7 @@ def main():
     cfg.merge_from_file(modelfile)
     cfg.merge_from_file('config.yaml')
     cfg.DATASETS.TRAIN = ("VOC_dataset",)
+    cfg.SOLVER.IMS_PER_BATCH = batch_size
     os.makedirs(cfg.OUTPUT_DIR, exist_ok=True)
     # Initialize trainer and train
     trainer = Trainer(cfg)
@@ -84,13 +92,6 @@ def main():
 
 
 if __name__ == "__main__":
-    # Initialize args and data
-    args = default_argument_parser().parse_args()
-    setup_logger()
-    train_path = "train_images/"
-    json_file = "train_images/pascal_train.json"
-    register_coco_instances("VOC_dataset", {}, json_file, train_path)
-
     # Train with {num_gpus} GPUs
     launch(
         main,
